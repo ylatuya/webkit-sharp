@@ -158,7 +158,6 @@ AC_CONFIG_FILES([
 	sources/Makefile
 	sources/AssemblyInfo.cs
 	sources/webkit-sharp-1.0.pc:sources/webkit-sharp.pc.in
-	sources/webkit-sharp.dll.config
 ])
 AC_CONFIG_COMMANDS([default],[[ echo timestamp > stamp-h ]],[[]])
 AC_OUTPUT

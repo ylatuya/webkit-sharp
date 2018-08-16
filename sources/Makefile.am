@@ -16,14 +16,13 @@ customs =
 
 CLEANFILES = $(ASSEMBLY_NAME).dll generated-stamp generated/*.cs $(API)
 
-DISTCLEANFILES= AssemblyInfo.cs $(ASSEMBLY_PC).pc $(ASSEMBLY_NAME).dll.config
+DISTCLEANFILES= AssemblyInfo.cs $(ASSEMBLY_PC).pc
 
 noinst_DATA = $(ASSEMBLY_NAME).dll
 
 EXTRA_DIST = $(RAW_API) $(sources) $(customs) $(METADATA) \
 	AssemblyInfo.cs.in \
 	$(ASSEMBLY_NAME).snk \
-	$(ASSEMBLY_NAME).dll.config.in \
 	$(ASSEMBLY_NAME).pc.in \
 	$(ASSEMBLY_NAME)-sources.xml
 
