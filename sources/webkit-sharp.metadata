@@ -104,6 +104,26 @@
 			</parameters>
 		</signal>
 
+		<signal name="NewWindowPolicyDecisionRequested" cname="new-window-policy-decision-requested" when="LAST">
+			<return-type type="gboolean" />
+			<parameters>
+				<parameter type="WebKitWebView*" name="webview" />
+				<parameter type="WebKitWebFrame*" name="frame" />
+				<parameter type="WebKitNetworkRequest*" name="request" />
+				<parameter type="WebKitWebNavigationAction*" name="navigationAction" />
+				<parameter type="WebKitWebPolicyDecision*" name="policyDecision" />
+			</parameters>
+		</signal>
+
+		<signal name="ContextMenu" cname="context-menu" when="LAST">
+			<return-type type="gboolean" />
+			<parameters>
+				<parameter type="WebKitWebView*" name="webview" />
+				<parameter type="GtkWidget*" name="defaultMenu" />
+				<parameter type="WebKitHitTestResult*" name="hitTestResult" />
+			</parameters>
+		</signal>
+
 	</add-node>
 
 </metadata>
